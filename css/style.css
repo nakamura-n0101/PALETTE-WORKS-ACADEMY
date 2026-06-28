@@ -1,0 +1,843 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #071426;
+    color: #F4F1EA;
+    font-family: "Yu Gothic", "游ゴシック", "Meiryo", sans-serif;
+    line-height: 1.8;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #F4F1EA;
+    text-decoration: none;
+}
+
+#wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header==================================================== */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav{
+    width: 60%;
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.nav li{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.nav a{
+    display: block;
+}
+.nav a:hover{
+    color: #F56A5E;
+}
+
+/* button==================================================== */
+
+.btn_area{
+    display: flex;
+    margin-top: 35px;
+}
+
+.btn{
+    display: block;
+    width: 220px;
+    margin-right: 20px;
+    padding: 14px 0;
+    border: 1px solid #2A3B59;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.btn_primary{
+    background: #F56A5E;
+}
+
+.btn:hover{
+    background: #18294A;
+}
+
+/* first view================================================ */
+
+.fv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #2A3B59;
+}
+
+.fv_text{
+    width: 48%;
+}
+
+.fv h2{
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+}
+
+.fv_copy{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #F56A5E;
+}
+
+.fv_visual{
+    width: 58%;
+    position: relative;
+}
+
+.fv_visual img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* common section============================================ */
+
+.section{
+    display: flex;
+    align-items:flex-start;
+    padding: 30px 0;
+    border-bottom: 1px solid #2A3B59;
+}
+
+.section_title{
+    width: 320px;
+}
+
+.section_title span{
+    display: block;
+    font-size: 1.8rem;
+}
+
+.section_title p{
+    margin: 10px 0 25px;
+    color: #AAB4C3;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+}
+
+.section_title h2{
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+}
+
+/* about===================================================== */
+.about_content{
+    width: 940px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about_text{
+    width: 280px;
+    font-size: 0.9rem;
+    margin:40px 40px 0 0;
+}
+
+.about_img{
+    width: 360px;
+    margin-right: 60px;
+}
+
+.about_img img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background: #111F3A;
+}
+
+.about_links{
+    width: 220px;
+}
+
+.about_links a{
+    display: block;
+    padding: 22px 0;
+    border-bottom: 1px solid #2A3B59;
+}
+
+/* curriculum=============================================== */
+.curriculum .section_title{
+    margin-bottom: 30px;
+}
+
+.card_area{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card{
+    width: 250px;
+    min-height: 230px;
+    padding: 30px;
+    background: #111F3A;
+}
+
+.card h3{
+    margin: 20px 0 15px;
+    font-size: 1.1rem;
+}
+
+.card li,
+.card p{
+    color: #F4F1EA;
+    font-size: 0.85rem;
+}
+
+.color_chip{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.red{
+    background: #F56A5E;
+}
+
+.yellow{
+    background: #F4C95D;
+}
+
+.green{
+    background: #4CD4AC;
+}
+
+.blue{
+    background: #4D7DFF;
+}
+
+/* growth==================================================== */
+
+.growth_area{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.growth_card{
+    width: 260px;
+    padding: 30px;
+    background: #111F3A;
+}
+
+.growth_card h3{
+    font-size: 1.3rem;
+}
+
+.growth_card p{
+    color: #AAB4C3;
+    font-size: 0.85rem;
+    margin: 0 auto;
+}
+
+.growth_card figure{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tri{
+    display:flex;
+    align-items:center;
+    margin: 0 20px;
+}
+/* works===================================================== */
+
+.works .section_title{
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.works_list{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.works_list figure{
+    width: 180px;
+}
+
+.works_list img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #111F3A;
+}
+
+
+/* voice===================================================== */
+
+.voice{
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.voice .section_title{
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.voice_area{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voice_card{
+    display: flex;
+    width: 295px;
+    padding: 1%;
+    background: #111F3A;
+}
+.voice_card figure{
+   margin: 10px;
+}
+.voice_card h3{
+    margin: 15px 0 10px;
+    font-size: 1rem;
+}
+
+.voice_card p{
+    color: #AAB4C3;
+    font-size: 0.85rem;
+}
+
+/* contact=================================================== */
+
+.contact{
+    align-items: center;
+}
+
+.contact_img{
+    width: 500px;
+    height: auto;
+}
+
+.contact_img img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #111F3A;
+}
+
+.contact_text{
+    width: 420px;
+    margin-left: 50px;
+}
+
+.contact_text h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.contact_text p{
+    color: #AAB4C3;
+}
+
+/* footer==================================================== */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #AAB4C3;
+    font-size: 0.8rem;
+    border-top: 1px solid #2A3B59;
+}
+
+.footer_logo{
+    display: flex;
+    align-items: center;
+}
+
+address{
+    font-style: normal;
+}
+
+.footer_nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.footer_nav li{
+    width: 150px;
+    margin-bottom: 3px;
+}
+
+.copyright{
+    font-size: 0.7rem;
+    align-self:flex-end;    
+}
+
+/* support==================================================== */
+
+.breadcrumb{
+    padding: 10px 0;
+    font-size: 0.8rem;
+    color: #F4F1EA;
+}
+
+.sub_fv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #2A3B59;
+    position: relative;
+}
+.vertical_copy{
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+    text-orientation: mixed;
+    white-space: nowrap;
+}
+.sub_fv_text{
+    width: 45%;
+}
+
+.sub_fv_text h2{
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.sub_copy{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.sub_fv_img{
+    width: 45%;
+    margin-right: 10%;
+}
+
+.sub_fv_img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background: #111F3A;
+}
+
+.sub_section{
+    padding: 80px 0;
+    border-bottom: 1px solid #2A3B59;
+}
+
+.sub_section h2{
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* ポイントカード */
+
+.support_point_area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.support_point{
+    width: 230px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: #111F3A;
+    text-align: center;
+}
+.support_point span{
+    display: block;
+    margin-bottom: 15px;
+    color: #F56A5E;
+    font-size: 1.5rem;
+}
+.support_point img{
+    display: block;
+    margin: 0 auto 15px;
+}
+.support_point h3{
+    margin-bottom: 15px;
+}
+
+.support_point p{
+    font-size: 0.9rem;
+    color: #AAB4C3;
+}
+
+/* 2カラム */
+
+.support_two_column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.target,
+.flow,
+.cost,
+.faq{
+    width: 48%;
+}
+
+.target ul{
+    margin-top: 20px;
+}
+
+.target li{
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.target li::before{
+    content: "■";
+    color: #F56A5E;
+    position: absolute;
+    left: 0;
+}
+
+.flow ol{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.flow li{
+    margin-bottom: 15px;
+}
+
+/* table */
+
+.cost table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.cost th,
+.cost td{
+    border: 1px solid #2A3B59;
+    padding: 15px;
+}
+
+.cost th{
+    width: 35%;
+    background: #111F3A;
+}
+
+/* faq */
+
+.faq dt{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #F4C95D;
+    font-weight: bold;
+}
+
+.faq dd{
+    color: #AAB4C3;
+}
+
+/* CTA */
+
+.sub_cta{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 ;
+}
+
+.sub_cta h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.sub_cta .btn_area{
+    margin-left: auto;
+}
+
+/* tour==================================================== */
+
+.tour_point_area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour_point{
+    width: 260px;
+    padding: 30px;
+    background: #111F3A;
+}
+
+.tour_point h3{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.tour_point p{
+    color: #AAB4C3;
+    font-size: 0.9rem;
+}
+
+.tour_point img{
+    display:block;
+    margin:0 auto 20px;
+}
+
+/* facility */
+
+.facility_area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.facility_card{
+    width: 360px;
+    margin-bottom: 35px;
+}
+
+.facility_card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #111F3A;
+}
+
+.facility_card h3{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.facility_card p{
+    color: #AAB4C3;
+    font-size: 0.9rem;
+}
+
+/* tour flow */
+
+.tour_flow_area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour_flow{
+    width: 220px;
+    padding: 25px;
+    background: #111F3A;
+}
+
+.tour_flow span{
+    display: block;
+    margin-bottom: 15px;
+    color: #F56A5E;
+    font-size: 1.4rem;
+}
+
+.tour_flow h3{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.tour_flow p{
+    color: #AAB4C3;
+    font-size: 0.85rem;
+}
+.tour_info img{
+    margin-left: 30px;
+}
+/* curriculum============================================== */
+
+/* コース */
+
+.course_area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_card{
+    width: 370px;
+    padding: 30px;
+    background: #111F3A;
+    border: 1px solid #2A3B59;
+}
+
+.course_card h3{
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.course_card p{
+    margin-bottom: 20px;
+    color: #AAB4C3;
+    font-size: 0.9rem;
+}
+
+.course_card ul{
+    margin-top: 15px;
+}
+
+.course_card li{
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.course_card li::before{
+    content: "•";
+    color: #F56A5E;
+    position: absolute;
+    left: 0;
+}
+.course_card img{
+    margin-bottom: 20px;
+}
+
+
+/* 学習の流れ */
+
+.flow_area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flow_card{
+    width: 220px;
+    padding: 25px;
+    background: #111F3A;
+    border: 1px solid #2A3B59;
+}
+
+.flow_card span{
+    display: block;
+    margin-bottom: 15px;
+    color: #F56A5E;
+    font-size: 1.5rem;
+}
+
+.flow_card h3{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.flow_card p{
+    color: #AAB4C3;
+    font-size: 0.85rem;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.flow_card img{
+    display: block;
+    margin: 10px auto;
+}
+/* サポート */
+
+.support_area{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.support_card{
+    width: 260px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #111F3A;
+    border: 1px solid #2A3B59;
+}
+
+.support_card h3{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.support_card p{
+    color: #AAB4C3;
+    font-size: 0.9rem;
+}
+
+.support_card img{
+    display:block;
+    margin:20px auto 30px;
+}
+
+/* 受講期間 */
+
+.schedule{
+    width: 34%;
+    margin: 0 auto;
+    border: none;
+}
+.schedule div{
+    padding: 20px;
+    background: #111F3A;
+    border: 1px solid #2A3B59;
+}
+
+.schedule h2{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.schedule p{
+    color: #AAB4C3;
+    font-size: 1.1rem;
+}
+.schedule_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.curriculum_cta > div:first-child{
+    margin-left: 40px;
+}
